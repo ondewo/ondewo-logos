@@ -2,6 +2,7 @@
 *****************
 
 ## Release ONDEWO LOGOS v0.1.0
+* Added official ONDEWO 1.0.0 Copyright Licence
 
 ### New Features
 
