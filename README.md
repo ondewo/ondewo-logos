@@ -2,4 +2,4 @@
 
 # ONDEWO LOGOS
 
-Logos publicly available (for github repos for example).
+Logos publicly available under official ONDEWO 1.0.0 Copyright Licence (for github repos for example).
