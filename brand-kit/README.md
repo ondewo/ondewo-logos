@@ -20,6 +20,8 @@ skills/workflows that automate it.
 | Grab a logo | [`assets/logo/`](assets/logo/) · index → [`assets/ASSET-INDEX.md`](assets/ASSET-INDEX.md) |
 | Write on-brand copy | [`voice-and-tone.md`](voice-and-tone.md) |
 | Check something is on-brand | [`accessibility.md`](accessibility.md) + the checklist in [`layout-and-spacing.md`](layout-and-spacing.md) |
+| Make a pitch deck / one-pager / case study / blog / email / press kit | `.claude/skills/` marketing skills (e.g. `slide-deck`, `one-pager`, `case-study`) |
+| Generate a branded letter, offer, Word/PPTX/Excel/Google doc | [`document-templates/PLAN.md`](document-templates/PLAN.md) |
 | Have an agent do it for me | `.claude/skills/create-brand-asset` (and `brand-copy`, `brand-check`) |
 
 ## The brand in one screen
@@ -47,6 +49,7 @@ skills/workflows that automate it.
 | [`accessibility.md`](accessibility.md) | Pre-computed WCAG AA contrast pairs (approved & forbidden) |
 | [`tokens/README.md`](tokens/README.md) | How to consume the design tokens |
 | [`templates/README.md`](templates/README.md) | Every template + how to render/export |
+| [`document-templates/PLAN.md`](document-templates/PLAN.md) | Branded Office/Google/PDF document system (letters, offers, decks, reports) |
 | [`assets/ASSET-INDEX.md`](assets/ASSET-INDEX.md) | Every logo file and when to use it |
 
 ## What's in the box

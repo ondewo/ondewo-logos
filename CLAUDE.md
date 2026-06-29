@@ -41,9 +41,18 @@ specific guideline(s) you need from `brand-kit/`.
 
 ## Skills & workflows (if running in Claude Code)
 
-- **Skills** — [`.claude/skills/`](.claude/skills/): `create-brand-asset` (make an
-  asset), `brand-check` (audit for compliance), `brand-copy` (write in-voice copy).
-  They activate automatically from the user's request.
+- **Base skills** — [`.claude/skills/`](.claude/skills/): `create-brand-asset` (make
+  a visual asset), `brand-check` (audit for compliance), `brand-copy` (write in-voice
+  copy). They activate automatically from the user's request.
+- **Marketing-material skills** — `slide-deck` (pitch/company/sales/webinar deck),
+  `one-pager` (product/service sheet, brochure), `case-study` (case study, testimonial),
+  `explainer-video`, `blog-article`, `marketing-email`, `social-media-kit`,
+  `whitepaper`, `infographic`, `press-kit`, `webinar-kit`. These compose the base
+  skills and emit documents via the engines in
+  [`brand-kit/document-templates/PLAN.md`](brand-kit/document-templates/PLAN.md).
+- **Document templates** — [`brand-kit/document-templates/`](brand-kit/document-templates/):
+  the plan for branded letters, offers, and Office/Google/PDF documents
+  (single-source → multi-format).
 - **Workflows** — [`.claude/workflows/`](.claude/workflows/): `campaign-kit`
   (generate a full campaign from one message) and `brand-audit` (sweep many assets).
   Run only on explicit user opt-in.
@@ -68,9 +77,14 @@ ondewo-logos/
 │   ├── accessibility.md          ← WCAG contrast pairs (pre-computed)
 │   ├── tokens/                   ← design tokens: JSON · CSS · SCSS · Tailwind
 │   ├── templates/                ← editable SVG/HTML asset starters
+│   ├── document-templates/       ← PLAN.md: branded Office/Google/PDF document system
 │   └── assets/                   ← clean web-ready logo SVGs + ASSET-INDEX.md
 ├── .claude/
-│   ├── skills/                   ← create-brand-asset · brand-check · brand-copy
+│   ├── skills/                   ← base (create-brand-asset · brand-check · brand-copy)
+│   │                                + marketing (slide-deck · one-pager · case-study ·
+│   │                                explainer-video · blog-article · marketing-email ·
+│   │                                social-media-kit · whitepaper · infographic ·
+│   │                                press-kit · webinar-kit)
 │   └── workflows/                ← campaign-kit.js · brand-audit.js
 ├── ONDEWO_Logo_*/                ← official source logos (.ai .eps .pdf .svg .psd)
 └── ondewo_logo_identity_guideline_2019.pdf  ← original guideline (source of truth)
