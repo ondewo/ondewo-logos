@@ -1,0 +1,146 @@
+/* ============================================================
+   ONDEWO Design Tokens — CSS Custom Properties
+   Generated from ondewo.tokens.json (canonical source).
+   Usage: <link rel="stylesheet" href="ondewo.css"> then
+   color: var(--ondewo-primary);  background: var(--ondewo-bg);
+   ============================================================ */
+
+:root {
+  /* ---- Brand core ---- */
+  --ondewo-blue:    #004C87;
+  --ondewo-magenta: #BE216B;
+  --ondewo-ink:     #231F20;
+  --ondewo-black:   #000000;
+  --ondewo-white:   #FFFFFF;
+
+  /* ---- Blue scale ---- */
+  --ondewo-blue-50:  #EBF1F5;
+  --ondewo-blue-100: #D6E2EC;
+  --ondewo-blue-200: #A8C2D6;
+  --ondewo-blue-300: #739DBD;
+  --ondewo-blue-400: #3873A1;
+  --ondewo-blue-500: #004C87;
+  --ondewo-blue-600: #004071;
+  --ondewo-blue-700: #00345C;
+  --ondewo-blue-800: #002644;
+  --ondewo-blue-900: #001A2E;
+
+  /* ---- Magenta scale ---- */
+  --ondewo-magenta-50:  #FAEDF3;
+  --ondewo-magenta-100: #F5DBE7;
+  --ondewo-magenta-200: #E9B4CD;
+  --ondewo-magenta-300: #DB85AE;
+  --ondewo-magenta-400: #CC528C;
+  --ondewo-magenta-500: #BE216B;
+  --ondewo-magenta-600: #A01C5A;
+  --ondewo-magenta-700: #811649;
+  --ondewo-magenta-800: #5F1036;
+  --ondewo-magenta-900: #410B24;
+
+  /* ---- Neutral scale ---- */
+  --ondewo-neutral-0:   #FFFFFF;
+  --ondewo-neutral-50:  #F7F8FA;
+  --ondewo-neutral-100: #E5E4E6;
+  --ondewo-neutral-200: #C7C5C9;
+  --ondewo-neutral-300: #A4A2A8;
+  --ondewo-neutral-400: #7E7A83;
+  --ondewo-neutral-500: #5A5560;
+  --ondewo-neutral-600: #4C4751;
+  --ondewo-neutral-700: #3D3A41;
+  --ondewo-neutral-800: #2D2A30;
+  --ondewo-neutral-900: #231F20;
+
+  /* ---- Semantic ---- */
+  --ondewo-success: #1E7A4B;
+  --ondewo-warning: #B5710A;
+  --ondewo-error:   #C02626;
+  --ondewo-info:    #004C87;
+
+  /* ---- Roles (use these in app code) ---- */
+  --ondewo-bg:            #FFFFFF;
+  --ondewo-bg-subtle:     #F7F8FA;
+  --ondewo-bg-inverse:    #00345C;
+  --ondewo-text:          #231F20;
+  --ondewo-text-muted:    #5A5560;
+  --ondewo-text-inverse:  #FFFFFF;
+  --ondewo-primary:       #004C87;
+  --ondewo-primary-hover: #00345C;
+  --ondewo-accent:        #BE216B;
+  --ondewo-accent-hover:  #A01C5A;
+  --ondewo-border:        #E5E4E6;
+  --ondewo-focus-ring:    #BE216B;
+
+  /* ---- Gradients ---- */
+  --ondewo-gradient-brand:        linear-gradient(135deg, #BE216B 0%, #004C87 100%);
+  --ondewo-gradient-brand-subtle: linear-gradient(135deg, #FAEDF3 0%, #EBF1F5 100%);
+  --ondewo-gradient-blue-deep:    linear-gradient(160deg, #004C87 0%, #001A2E 100%);
+
+  /* ---- Typography ---- */
+  --ondewo-font-display: "Futura PT", "Futura LT Pro", Futura, "Jost", "Century Gothic", "Trebuchet MS", system-ui, sans-serif;
+  --ondewo-font-body:    "Futura PT", "Jost", "Century Gothic", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --ondewo-font-mono:    "JetBrains Mono", "SFMono-Regular", "Cascadia Code", Consolas, monospace;
+
+  --ondewo-weight-light:   300;
+  --ondewo-weight-regular: 400;
+  --ondewo-weight-medium:  500;
+  --ondewo-weight-bold:    700;
+
+  --ondewo-text-xs:   0.75rem;
+  --ondewo-text-sm:   0.875rem;
+  --ondewo-text-base: 1rem;
+  --ondewo-text-lg:   1.25rem;
+  --ondewo-text-xl:   1.5625rem;
+  --ondewo-text-2xl:  1.9375rem;
+  --ondewo-text-3xl:  2.4375rem;
+  --ondewo-text-4xl:  3.0625rem;
+  --ondewo-text-5xl:  3.8125rem;
+
+  --ondewo-leading-tight:   1.1;
+  --ondewo-leading-snug:    1.25;
+  --ondewo-leading-normal:  1.5;
+  --ondewo-leading-relaxed: 1.7;
+
+  --ondewo-tracking-tight:  -0.01em;
+  --ondewo-tracking-normal: 0;
+  --ondewo-tracking-wide:   0.04em;
+  --ondewo-tracking-wider:  0.12em;
+
+  /* ---- Spacing (4px base) ---- */
+  --ondewo-space-0:  0;
+  --ondewo-space-1:  0.25rem;
+  --ondewo-space-2:  0.5rem;
+  --ondewo-space-3:  0.75rem;
+  --ondewo-space-4:  1rem;
+  --ondewo-space-5:  1.5rem;
+  --ondewo-space-6:  2rem;
+  --ondewo-space-7:  3rem;
+  --ondewo-space-8:  4rem;
+  --ondewo-space-9:  6rem;
+  --ondewo-space-10: 8rem;
+
+  /* ---- Radii ---- */
+  --ondewo-radius-none: 0;
+  --ondewo-radius-sm:   0.25rem;
+  --ondewo-radius-md:   0.5rem;
+  --ondewo-radius-lg:   1rem;
+  --ondewo-radius-xl:   1.5rem;
+  --ondewo-radius-pill: 9999px;
+
+  /* ---- Shadows ---- */
+  --ondewo-shadow-sm: 0 1px 2px rgba(0,38,68,0.08);
+  --ondewo-shadow-md: 0 4px 12px rgba(0,38,68,0.10);
+  --ondewo-shadow-lg: 0 12px 32px rgba(0,38,68,0.14);
+}
+
+/* Optional dark surface theme — apply to a container with .ondewo-dark */
+.ondewo-dark {
+  --ondewo-bg:           #001A2E;
+  --ondewo-bg-subtle:    #002644;
+  --ondewo-bg-inverse:   #FFFFFF;
+  --ondewo-text:         #FFFFFF;
+  --ondewo-text-muted:   #A8C2D6;
+  --ondewo-text-inverse: #231F20;
+  --ondewo-primary:      #739DBD;
+  --ondewo-accent:       #DB85AE;
+  --ondewo-border:       #00345C;
+}

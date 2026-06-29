@@ -1,0 +1,77 @@
+// ============================================================
+//  ONDEWO Design Tokens — SCSS variables + map
+//  Generated from ondewo.tokens.json (canonical source).
+//  @use "ondewo" as ondewo;  color: ondewo.$blue;
+// ============================================================
+
+// ---- Brand core ----
+$blue:    #004C87;
+$magenta: #BE216B;
+$ink:     #231F20;
+$black:   #000000;
+$white:   #FFFFFF;
+
+// ---- Scales ----
+$blue-scale: (
+  50: #EBF1F5, 100: #D6E2EC, 200: #A8C2D6, 300: #739DBD, 400: #3873A1,
+  500: #004C87, 600: #004071, 700: #00345C, 800: #002644, 900: #001A2E
+);
+$magenta-scale: (
+  50: #FAEDF3, 100: #F5DBE7, 200: #E9B4CD, 300: #DB85AE, 400: #CC528C,
+  500: #BE216B, 600: #A01C5A, 700: #811649, 800: #5F1036, 900: #410B24
+);
+$neutral-scale: (
+  0: #FFFFFF, 50: #F7F8FA, 100: #E5E4E6, 200: #C7C5C9, 300: #A4A2A8,
+  400: #7E7A83, 500: #5A5560, 600: #4C4751, 700: #3D3A41, 800: #2D2A30, 900: #231F20
+);
+
+// ---- Semantic ----
+$success: #1E7A4B;
+$warning: #B5710A;
+$error:   #C02626;
+$info:    #004C87;
+
+// ---- Roles ----
+$bg:            #FFFFFF;
+$bg-subtle:     #F7F8FA;
+$bg-inverse:    #00345C;
+$text:          #231F20;
+$text-muted:    #5A5560;
+$text-inverse:  #FFFFFF;
+$primary:       #004C87;
+$primary-hover: #00345C;
+$accent:        #BE216B;
+$accent-hover:  #A01C5A;
+$border:        #E5E4E6;
+$focus-ring:    #BE216B;
+
+// ---- Gradients ----
+$gradient-brand:        linear-gradient(135deg, #BE216B 0%, #004C87 100%);
+$gradient-brand-subtle: linear-gradient(135deg, #FAEDF3 0%, #EBF1F5 100%);
+$gradient-blue-deep:    linear-gradient(160deg, #004C87 0%, #001A2E 100%);
+
+// ---- Typography ----
+$font-display: "Futura PT", "Futura LT Pro", Futura, "Jost", "Century Gothic", "Trebuchet MS", system-ui, sans-serif;
+$font-body:    "Futura PT", "Jost", "Century Gothic", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$font-mono:    "JetBrains Mono", "SFMono-Regular", "Cascadia Code", Consolas, monospace;
+
+$weight-light: 300; $weight-regular: 400; $weight-medium: 500; $weight-bold: 700;
+
+$text-sizes: (
+  xs: 0.75rem, sm: 0.875rem, base: 1rem, lg: 1.25rem, xl: 1.5625rem,
+  2xl: 1.9375rem, 3xl: 2.4375rem, 4xl: 3.0625rem, 5xl: 3.8125rem
+);
+
+// ---- Spacing ----
+$space: (
+  0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.5rem,
+  6: 2rem, 7: 3rem, 8: 4rem, 9: 6rem, 10: 8rem
+);
+
+// ---- Radii ----
+$radius-sm: 0.25rem; $radius-md: 0.5rem; $radius-lg: 1rem; $radius-xl: 1.5rem; $radius-pill: 9999px;
+
+// ---- Shadows ----
+$shadow-sm: 0 1px 2px rgba(0,38,68,0.08);
+$shadow-md: 0 4px 12px rgba(0,38,68,0.10);
+$shadow-lg: 0 12px 32px rgba(0,38,68,0.14);

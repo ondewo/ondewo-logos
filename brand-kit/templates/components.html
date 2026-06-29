@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ONDEWO — UI Component Reference</title>
+<link rel="stylesheet" href="../tokens/ondewo.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  body{font-family:var(--ondewo-font-body);color:var(--ondewo-text);background:var(--ondewo-bg-subtle);margin:0;padding:40px;}
+  h2{font-family:var(--ondewo-font-display);color:var(--ondewo-primary);margin-top:48px;}
+  .row{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin:16px 0;}
+
+  /* Buttons */
+  .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--ondewo-font-display);font-weight:500;
+       padding:12px 24px;border-radius:var(--ondewo-radius-pill);text-decoration:none;border:2px solid transparent;cursor:pointer;}
+  .btn-primary{background:var(--ondewo-primary);color:#fff;} .btn-primary:hover{background:var(--ondewo-primary-hover);}
+  .btn-accent{background:var(--ondewo-accent);color:#fff;} .btn-accent:hover{background:var(--ondewo-accent-hover);}
+  .btn-ghost{background:#fff;color:var(--ondewo-primary);border-color:var(--ondewo-border);} .btn-ghost:hover{border-color:var(--ondewo-primary);}
+
+  /* Badge / chip */
+  .badge{display:inline-block;padding:4px 12px;border-radius:var(--ondewo-radius-pill);font-size:var(--ondewo-text-sm);font-weight:500;}
+  .badge-blue{background:var(--ondewo-blue-50);color:var(--ondewo-blue-700);}
+  .badge-magenta{background:var(--ondewo-magenta-50);color:var(--ondewo-magenta-700);}
+  .badge-success{background:#E4F2EA;color:var(--ondewo-success);}
+
+  /* Card */
+  .card{background:#fff;border:1px solid var(--ondewo-border);border-radius:var(--ondewo-radius-lg);
+        padding:var(--ondewo-space-5);max-width:320px;box-shadow:var(--ondewo-shadow-sm);}
+  .card h3{font-family:var(--ondewo-font-display);color:var(--ondewo-primary);margin:0 0 8px;}
+  .card .eyebrow{text-transform:uppercase;letter-spacing:var(--ondewo-tracking-wider);color:var(--ondewo-accent);
+                 font-weight:500;font-size:var(--ondewo-text-xs);}
+
+  /* Input */
+  .field{display:block;max-width:320px;margin-bottom:12px;}
+  .field label{display:block;font-size:var(--ondewo-text-sm);font-weight:500;margin-bottom:4px;}
+  .field input{width:100%;padding:12px;border:1px solid var(--ondewo-border);border-radius:var(--ondewo-radius-md);
+               font-family:var(--ondewo-font-body);font-size:var(--ondewo-text-base);}
+  .field input:focus{outline:2px solid var(--ondewo-focus-ring);outline-offset:1px;border-color:var(--ondewo-primary);}
+
+  /* Alert */
+  .alert{padding:14px 18px;border-radius:var(--ondewo-radius-md);border-left:4px solid;max-width:420px;margin-bottom:12px;}
+  .alert-info{background:var(--ondewo-blue-50);border-color:var(--ondewo-info);}
+  .alert-error{background:#FBE9E9;border-color:var(--ondewo-error);}
+
+  /* Swatches */
+  .sw{width:96px;height:64px;border-radius:var(--ondewo-radius-md);display:flex;align-items:flex-end;padding:6px;color:#fff;font-size:11px;}
+</style>
+</head>
+<body>
+  <h2>Buttons</h2>
+  <div class="row">
+    <a class="btn btn-accent">Book a demo →</a>
+    <a class="btn btn-primary">Talk to sales</a>
+    <a class="btn btn-ghost">Read the docs</a>
+  </div>
+
+  <h2>Badges</h2>
+  <div class="row">
+    <span class="badge badge-blue">New</span>
+    <span class="badge badge-magenta">Beta</span>
+    <span class="badge badge-success">Live</span>
+  </div>
+
+  <h2>Card</h2>
+  <div class="row">
+    <div class="card">
+      <div class="eyebrow">ONDEWO S2T</div>
+      <h3>Speech-to-Text</h3>
+      <p>High-accuracy transcription you can run on-premise, in real time.</p>
+      <a class="btn btn-ghost" style="padding:8px 16px;">Learn more →</a>
+    </div>
+  </div>
+
+  <h2>Form field</h2>
+  <div class="field"><label>Work email</label><input type="email" placeholder="you@company.com"></div>
+
+  <h2>Alerts</h2>
+  <div class="alert alert-info"><b>Heads up.</b> Your trial deploys in on-prem mode by default.</div>
+  <div class="alert alert-error"><b>Call failed.</b> Check that a SIP trunk is connected.</div>
+
+  <h2>Swatches</h2>
+  <div class="row">
+    <div class="sw" style="background:#004C87">Blue 500</div>
+    <div class="sw" style="background:#BE216B">Magenta 500</div>
+    <div class="sw" style="background:#231F20">Ink 900</div>
+    <div class="sw" style="background:var(--ondewo-gradient-brand)">Gradient</div>
+  </div>
+</body>
+</html>
