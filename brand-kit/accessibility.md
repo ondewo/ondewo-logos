@@ -21,7 +21,7 @@ These pairs are pre-computed so an agent can pick a safe combination instantly.
 | `#FFFFFF` White | `#BE216B` Magenta | **5.80** | ✅ AA (AAA for large) |
 | `#BE216B` Magenta | `#FFFFFF` White | **5.80** | ✅ AA — accent text/links |
 | `#FFFFFF` White | `#00345C` Blue-700 | **12.8** | ✅ AAA — dark surfaces |
-| `#5A5560` Neutral-500 | `#FFFFFF` White | **7.0** | ✅ AAA — muted text |
+| `#5A5560` Neutral-500 | `#FFFFFF` White | **7.2** | ✅ AAA — muted text |
 | `#A8C2D6` Blue-200 | `#001A2E` Blue-900 | **9.4** | ✅ AAA — dark-theme muted |
 
 ## 3. Forbidden pairs (do not use)

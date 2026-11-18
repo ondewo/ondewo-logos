@@ -41,3 +41,9 @@ web-ready SVGs are in [`brand-kit/assets/logo/`](brand-kit/assets/logo/). See th
 full [asset index](brand-kit/assets/ASSET-INDEX.md).
 
 The original brand guideline: [`ondewo_logo_identity_guideline_2019.pdf`](ondewo_logo_identity_guideline_2019.pdf).
+
+The extended, regenerable guideline (10 pages, built from the design tokens and logo SVGs):
+[`brand-kit/generated/ondewo_logo_identity_guideline.pdf`](brand-kit/generated/ondewo_logo_identity_guideline.pdf).
+Rebuild it with `make guideline` (or `make guideline-2026` for the root 2026 PDF).
+Per-platform kits (LinkedIn, Facebook, Instagram, TikTok, Bitbucket, Jira, Confluence, Roblox) live in
+[`brand-kit/social/`](brand-kit/social/README.md); rebuild with `make social`.

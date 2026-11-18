@@ -101,3 +101,18 @@ continuity, two elements completing each other.**
 ### Related
 - Words & messaging → [`voice-and-tone.md`](voice-and-tone.md)
 - Visual expression → [`logo-guidelines.md`](logo-guidelines.md), [`color-system.md`](color-system.md), [`typography.md`](typography.md)
+
+---
+
+## Company details (legal)
+
+Use exactly this block in letterheads, email signatures, imprints and document footers:
+
+```
+ONDEWO GmbH
+Plankengasse 1/5-6
+1010 Vienna
+Austria
+VAT: ATU72347427
+Company Reg.: FN473436f
+```

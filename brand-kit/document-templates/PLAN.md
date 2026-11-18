@@ -674,12 +674,14 @@ make offer SRC=offer/offer.example.en.md             # pdf + docx + xlsx
 ```
 Core of `build.py pdf`: `HTML(string=rendered, base_url=tmpl_dir).write_pdf(out_pdf)` (WeasyPrint, `@page A4`, embeds Jost; `money`/`dateloc` filters registered).
 
-**Legal placeholders — `shared/legal.yml`** (one edit propagates to every footer/cover). **All values are `<confirm>` placeholders and must be verified before any document ships:**
+**Legal placeholders — `shared/legal.yml`** (one edit propagates to every footer/cover). **Company address, VAT and register number are confirmed; the remaining `<confirm>` values must be verified before any document ships:**
 ```yaml
-entity:        "ONDEWO GmbH"            # <confirm> exact legal name
-postcode_city: "<confirm> 1010 Wien"     # <confirm> seat (AT vs DE)
-vat:           "VAT/ATU: <confirm>"      # AT 'ATU########' or DE 'DE#########'
-reg_no:        "FN <confirm>"            # AT Firmenbuchnummer / DE HRB
+entity:        "ONDEWO GmbH"
+street:        "Plankengasse 1/5-6"
+postcode_city: "1010 Vienna"
+country:       "Austria"
+vat:           "VAT: ATU72347427"
+reg_no:        "Company Reg.: FN473436f"  # Austrian Firmenbuchnummer
 default_vat_rate: 20                     # <confirm> AT 20% / DE 19%
 payment_terms:   "<confirm> 14 days net"
 governing_law:   "<confirm> Austrian law, venue Vienna"
