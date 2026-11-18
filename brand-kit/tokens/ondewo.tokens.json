@@ -1,0 +1,149 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "ONDEWO canonical design tokens. Single source of truth for color, type, spacing, radii, shadows. Derived from the official 2019 ONDEWO Logo & Identity Guideline. Other token files (CSS/SCSS/Tailwind) are generated from this.",
+  "meta": {
+    "brand": "ONDEWO",
+    "version": "1.0.0",
+    "tagline": "We automate your phone calls.",
+    "source": "ondewo_logo_identity_guideline_2019.pdf"
+  },
+  "color": {
+    "brand": {
+      "blue":    { "$value": "#004C87", "$type": "color", "$description": "ONDEWO Blue — primary. Guideline #014C89; SVG/web canonical #004C87. RGB 0,76,135. CMYK 100/75/15/0." },
+      "magenta": { "$value": "#BE216B", "$type": "color", "$description": "ONDEWO Magenta — secondary/accent. Guideline #BF206B; SVG/web canonical #BE216B. RGB 190,33,107. CMYK 25/100/35/0." },
+      "ink":     { "$value": "#231F20", "$type": "color", "$description": "ONDEWO Ink — near-black used in the 1-colour logo. RGB 35,31,32." },
+      "black":   { "$value": "#000000", "$type": "color" },
+      "white":   { "$value": "#FFFFFF", "$type": "color" }
+    },
+    "blue": {
+      "50":  { "$value": "#EBF1F5", "$type": "color" },
+      "100": { "$value": "#D6E2EC", "$type": "color" },
+      "200": { "$value": "#A8C2D6", "$type": "color" },
+      "300": { "$value": "#739DBD", "$type": "color" },
+      "400": { "$value": "#3873A1", "$type": "color" },
+      "500": { "$value": "#004C87", "$type": "color", "$description": "Brand Blue (base)" },
+      "600": { "$value": "#004071", "$type": "color" },
+      "700": { "$value": "#00345C", "$type": "color" },
+      "800": { "$value": "#002644", "$type": "color" },
+      "900": { "$value": "#001A2E", "$type": "color" }
+    },
+    "magenta": {
+      "50":  { "$value": "#FAEDF3", "$type": "color" },
+      "100": { "$value": "#F5DBE7", "$type": "color" },
+      "200": { "$value": "#E9B4CD", "$type": "color" },
+      "300": { "$value": "#DB85AE", "$type": "color" },
+      "400": { "$value": "#CC528C", "$type": "color" },
+      "500": { "$value": "#BE216B", "$type": "color", "$description": "Brand Magenta (base)" },
+      "600": { "$value": "#A01C5A", "$type": "color" },
+      "700": { "$value": "#811649", "$type": "color" },
+      "800": { "$value": "#5F1036", "$type": "color" },
+      "900": { "$value": "#410B24", "$type": "color" }
+    },
+    "neutral": {
+      "0":   { "$value": "#FFFFFF", "$type": "color" },
+      "50":  { "$value": "#F7F8FA", "$type": "color" },
+      "100": { "$value": "#E5E4E6", "$type": "color" },
+      "200": { "$value": "#C7C5C9", "$type": "color" },
+      "300": { "$value": "#A4A2A8", "$type": "color" },
+      "400": { "$value": "#7E7A83", "$type": "color" },
+      "500": { "$value": "#5A5560", "$type": "color" },
+      "600": { "$value": "#4C4751", "$type": "color" },
+      "700": { "$value": "#3D3A41", "$type": "color" },
+      "800": { "$value": "#2D2A30", "$type": "color" },
+      "900": { "$value": "#231F20", "$type": "color" }
+    },
+    "semantic": {
+      "success": { "$value": "#1E7A4B", "$type": "color" },
+      "warning": { "$value": "#B5710A", "$type": "color" },
+      "error":   { "$value": "#C02626", "$type": "color" },
+      "info":    { "$value": "#004C87", "$type": "color" }
+    },
+    "role": {
+      "bg":            { "$value": "#FFFFFF", "$type": "color" },
+      "bg-subtle":     { "$value": "#F7F8FA", "$type": "color" },
+      "bg-inverse":    { "$value": "#00345C", "$type": "color" },
+      "text":          { "$value": "#231F20", "$type": "color" },
+      "text-muted":    { "$value": "#5A5560", "$type": "color" },
+      "text-inverse":  { "$value": "#FFFFFF", "$type": "color" },
+      "primary":       { "$value": "#004C87", "$type": "color" },
+      "primary-hover": { "$value": "#00345C", "$type": "color" },
+      "accent":        { "$value": "#BE216B", "$type": "color" },
+      "accent-hover":  { "$value": "#A01C5A", "$type": "color" },
+      "border":        { "$value": "#E5E4E6", "$type": "color" },
+      "focus-ring":    { "$value": "#BE216B", "$type": "color" }
+    }
+  },
+  "gradient": {
+    "brand":         { "$value": "linear-gradient(135deg, #BE216B 0%, #004C87 100%)", "$type": "gradient", "$description": "Signature swirl gradient: magenta to blue." },
+    "brand-subtle":  { "$value": "linear-gradient(135deg, #FAEDF3 0%, #EBF1F5 100%)", "$type": "gradient" },
+    "blue-deep":     { "$value": "linear-gradient(160deg, #004C87 0%, #001A2E 100%)", "$type": "gradient" }
+  },
+  "typography": {
+    "fontFamily": {
+      "display": { "$value": "\"Futura PT\", \"Futura LT Pro\", Futura, \"Jost\", \"Century Gothic\", \"Trebuchet MS\", system-ui, sans-serif", "$type": "fontFamily", "$description": "Brand geometric sans. Use 'Jost' as the free web fallback for Futura." },
+      "body":    { "$value": "\"Futura PT\", \"Jost\", \"Century Gothic\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif", "$type": "fontFamily" },
+      "mono":    { "$value": "\"JetBrains Mono\", \"SFMono-Regular\", \"Cascadia Code\", Consolas, monospace", "$type": "fontFamily" }
+    },
+    "fontWeight": {
+      "light":    { "$value": 300, "$type": "fontWeight" },
+      "regular":  { "$value": 400, "$type": "fontWeight" },
+      "medium":   { "$value": 500, "$type": "fontWeight" },
+      "bold":     { "$value": 700, "$type": "fontWeight" }
+    },
+    "fontSize": {
+      "xs":   { "$value": "0.75rem",  "$type": "dimension" },
+      "sm":   { "$value": "0.875rem", "$type": "dimension" },
+      "base": { "$value": "1rem",     "$type": "dimension" },
+      "lg":   { "$value": "1.25rem",  "$type": "dimension" },
+      "xl":   { "$value": "1.5625rem","$type": "dimension" },
+      "2xl":  { "$value": "1.9375rem","$type": "dimension" },
+      "3xl":  { "$value": "2.4375rem","$type": "dimension" },
+      "4xl":  { "$value": "3.0625rem","$type": "dimension" },
+      "5xl":  { "$value": "3.8125rem","$type": "dimension" }
+    },
+    "lineHeight": {
+      "tight":   { "$value": "1.1",  "$type": "number" },
+      "snug":    { "$value": "1.25", "$type": "number" },
+      "normal":  { "$value": "1.5",  "$type": "number" },
+      "relaxed": { "$value": "1.7",  "$type": "number" }
+    },
+    "letterSpacing": {
+      "tight":   { "$value": "-0.01em", "$type": "dimension" },
+      "normal":  { "$value": "0",       "$type": "dimension" },
+      "wide":    { "$value": "0.04em",  "$type": "dimension" },
+      "wider":   { "$value": "0.12em",  "$type": "dimension", "$description": "For ONDEWO wordmark-style all-caps labels." }
+    }
+  },
+  "space": {
+    "0":  { "$value": "0",     "$type": "dimension" },
+    "1":  { "$value": "0.25rem","$type": "dimension" },
+    "2":  { "$value": "0.5rem", "$type": "dimension" },
+    "3":  { "$value": "0.75rem","$type": "dimension" },
+    "4":  { "$value": "1rem",   "$type": "dimension" },
+    "5":  { "$value": "1.5rem", "$type": "dimension" },
+    "6":  { "$value": "2rem",   "$type": "dimension" },
+    "7":  { "$value": "3rem",   "$type": "dimension" },
+    "8":  { "$value": "4rem",   "$type": "dimension" },
+    "9":  { "$value": "6rem",   "$type": "dimension" },
+    "10": { "$value": "8rem",   "$type": "dimension" }
+  },
+  "radius": {
+    "none": { "$value": "0",       "$type": "dimension" },
+    "sm":   { "$value": "0.25rem", "$type": "dimension" },
+    "md":   { "$value": "0.5rem",  "$type": "dimension" },
+    "lg":   { "$value": "1rem",    "$type": "dimension" },
+    "xl":   { "$value": "1.5rem",  "$type": "dimension" },
+    "pill": { "$value": "9999px",  "$type": "dimension" }
+  },
+  "shadow": {
+    "sm": { "$value": "0 1px 2px rgba(0,38,68,0.08)", "$type": "shadow" },
+    "md": { "$value": "0 4px 12px rgba(0,38,68,0.10)", "$type": "shadow" },
+    "lg": { "$value": "0 12px 32px rgba(0,38,68,0.14)", "$type": "shadow" }
+  },
+  "breakpoint": {
+    "sm": { "$value": "640px",  "$type": "dimension" },
+    "md": { "$value": "768px",  "$type": "dimension" },
+    "lg": { "$value": "1024px", "$type": "dimension" },
+    "xl": { "$value": "1280px", "$type": "dimension" }
+  }
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ONDEWO — Letterhead / One-pager (A4, print to PDF)</title>
+<link rel="stylesheet" href="../tokens/ondewo.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:var(--ondewo-font-body); color:var(--ondewo-text); }
+  .page { width:210mm; min-height:297mm; margin:0 auto; padding:22mm 20mm; position:relative; }
+  .topbar { position:absolute; top:0; left:0; right:0; height:8mm; background:var(--ondewo-blue); }
+  .topbar::before { content:""; position:absolute; left:0; top:0; width:60mm; height:8mm; background:var(--ondewo-magenta); }
+  header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:16mm; }
+  header img { height:14mm; }
+  .meta { text-align:right; font-size:10pt; color:var(--ondewo-text-muted); line-height:1.5; }
+  h1 { font-family:var(--ondewo-font-display); color:var(--ondewo-primary); font-size:22pt; margin:0 0 4mm; }
+  .eyebrow { text-transform:uppercase; letter-spacing:.12em; color:var(--ondewo-accent); font-weight:500; font-size:9pt; }
+  p { font-size:11pt; line-height:1.6; }
+  footer { position:absolute; bottom:14mm; left:20mm; right:20mm; display:flex; justify-content:space-between;
+           border-top:1px solid var(--ondewo-border); padding-top:4mm; font-size:8.5pt; color:var(--ondewo-text-muted); }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="topbar"></div>
+    <header>
+      <img src="../assets/logo/ondewo-logo-horizontal.svg" alt="ONDEWO">
+      <div class="meta">
+        ONDEWO GmbH<br>Plankengasse 1/5-6<br>1010 Vienna, Austria<br>ondewo.com
+      </div>
+    </header>
+
+    <p class="eyebrow">‹Document type — e.g. Proposal›</p>
+    <h1>Document title goes here</h1>
+    <p>Dear ‹Name›,</p>
+    <p>Body copy. Keep paragraphs short and the voice clear and confident (see
+       voice-and-tone.md). This A4 letterhead prints to PDF cleanly via your browser's
+       “Print → Save as PDF”. The blue/magenta top bar and footer give every document
+       a consistent ONDEWO frame.</p>
+    <p>Kind regards,<br>‹Name›<br>‹Title›</p>
+
+    <footer>
+      <span>We automate your phone calls.</span>
+      <span>ONDEWO GmbH · Plankengasse 1/5-6, 1010 Vienna, Austria · VAT: ATU72347427 · Company Reg.: FN473436f · ondewo.com</span>
+    </footer>
+  </div>
+</body>
+</html>
